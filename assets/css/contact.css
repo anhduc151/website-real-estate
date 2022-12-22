@@ -1,0 +1,81 @@
+/*========================Satrt Hero Section====================*/
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.image-caption {
+    position: absolute;
+    color: #fff;
+}
+
+.image-caption h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.image-caption p {
+    padding: 40px 100px 0;
+    font-size: 25px;
+}
+
+/*==========================Start Advice tips Section=====================*/
+.advice-header {
+    background: var(--bg-color);
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}  
+.image img {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.text-white-bg {
+    background: #fff;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,.2);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-white-bg h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.text-white-bg p {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.contact-form {
+    background: var(--bg-color);
+    padding-bottom: 50px;
+}
+
+.form-group label {
+    padding-top: 10px;
+}
+
+.submit-btn {
+    border: none;
+    background: none;
+    color: var(--text-color);
+}
+
+.submit-btn:hover {
+    color: #fff;
+}
+
+
+
+/*=====================Start Media Queries======================*/
+@media only screen and (max-width: 767px){
+    .image-caption h1 {
+        font-size: 30px;
+    }
+}

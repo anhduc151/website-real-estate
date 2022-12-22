@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Red Coral Realty Need advice - Contact one of our Mortgage Advisors">
+        <title>Tư vấn thế chấp</title>
+        <!--Bootsrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--Favicon-->
+        <link rel="icon" href="./assets/img/logo/building.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="./assets/img/logo/building.ico" type="image/x-icon"/>
+        <!--Style-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/mortgage.css">
+    </head>
+    <body>
+        <!--Start Header Section-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <img src="./assets/img/logo/logo.svg" alt="">
+                    <a class="navbar-brand" src="./assets/img/logo/logo.svg" href="index.html"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dự án</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="local-properties.html">Dự án các tỉnh ở Phía Bắc</a>
+                                    <a class="dropdown-item" href="abroad-properies.html">Dự án các tỉnh ở phía Nam </a>
+                                    <a class="dropdown-item" href="projects.html">Quản lý dự án</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mortgage.html">Tư vấn thế chấp</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSecondMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thông tin thêm</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownSecondMenuLink">
+                                    <a class="dropdown-item" href="research.html">Đội nghiên cứu dự án</a>
+                                    <a class="dropdown-item" href="buyAdvice.html">Lời khuyên cho người mua</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownThirdMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Liên hệ</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownThirdMenuLink">
+                                    <a class="dropdown-item" href="request-valuation.html">Yêu cầu định giá</a>
+                                    <a class="dropdown-item" href="contact.html">Dịch vụ khách hàng</a>
+                                </div>
+                            </li> 
+                           
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+        </header>
+        <!--End Header Section-->
+
+        <!--Start Back to top button-->
+        <button id="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i>  
+        </button>
+        <!--End Back to top button-->
+
+        <!--Satrt Hero Section--> 
+        <section class="hero-img"> 
+            <div id="container">
+                <div class="row align-items-center">
+                    <div class="img-container">
+                        <img src="assets/img/mortgage/mortgage01.jpg" class="img-fluid" alt="man Writing">
+                    </div>
+                    <div class="col-12 text-center image-caption move-from-top">
+                        <h1>Tư vấn thế chấp</h1>
+                    </div>
+                </div>
+            </div>   
+        </section>     
+        <!--Satrt Hero Section-->
+        
+        <!--Start Modal Section -->
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content row">
+                    
+                    <div class="modal-header row ml-auto">
+                        <div class="col-sm-10 text-center">
+                            <h5 class="modal-title" id="contactModalLabel">Yêu cầu dịch vụ tài chính</h5>
+                        </div>
+                        <div class="col-sm-10 text-center">
+                            <p>Nhóm chuyên gia tài chính của chúng tôi luôn trực tuyến, có sẵn qua cuộc gọi hoặc cuộc họp ảo để hướng dẫn bạn thực hiện các lựa chọn của mình. Liên lạc ngay hôm nay</p>
+                        </div>
+                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="myForm" onsubmit="return sendMail(this);">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" name="name" class="form-control" id="inputFullName" placeholder="Full Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <input type="number" name="phone" class="form-control" id="inputPhone" placeholder="Phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select id="inputOption" name="time" class="form-control" required>
+                                    <option selected value="">Chọn sản phẩm</option>
+                                    <option>thế chấp</option>
+                                    <option>Bảo vệ thế chấp/Bảo hiểm nhân thọ</option>
+                                    <option>Bảo hiểm nhà ở</option>
+                                    <option>lương hưu</option>
+                                    <option>Chuyển đổi/thế chấp</option>
+                                    <option>Khác</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn">Gửi Yêu Cầu</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="contact-header">
+            <div class="container gray-bg">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1>thế chấp bất động sản</h1>
+                        <div class="border-top border-costum mt-5 mb-3"></div>
+                        <p class="lead">Cần tư vấn - Liên hệ với một trong những Cố vấn thế chấp của chúng tôi</p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Liên hệ chúng tôi</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container white-bg move-from-right">
+                <p class="lead">Bất kể tình huống của bạn là gì, đội ngũ cố vấn thế chấp có trình độ của chúng tôi có kinh nghiệm và kiến thức thị trường để tìm đúng
+                    lựa chọn thế chấp cho bạn. Từ những người mua lần đầu và những người chuyển nhà đến các nhà đầu tư, v.v., đội ngũ giàu kinh nghiệm của chúng tôi sẽ làm việc với bạn
+                    hướng dẫn bạn qua quy trình thế chấp một cách cẩn thận và chu đáo.</p> 
+            </div>
+        </section>
+        <!--End Modal Section-->
+
+        <!--Start Mortgage Calculator Section-->
+        <section class="mortgage-calc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 d-none d-lg-block mortgage-container move-from-left">
+                        <h2>Tính thế chấp của bạn</h2>
+                        <p>SỐ TIỀN VAY đ<input type="number" id="amount" min="1" max="2000000" onchange="calcLoan()"></p>
+                        <p>LÃI SUẤT %<input type="number" id="iterest_rate" min="0" max="100" value="2.7" step=".1" onchange="calcLoan()"></p>
+                        <p class="mb-5 pb-4">THỜI HẠN VAY (NĂM) <input type="number" id="years" min="1" max="35" value="35" step="1" onchange="calcLoan()"></p>
+                        <div id="payment" class="payment text-center mt-5"></div> 
+                    </div>
+                    <div class="col-lg-7 mortgage-text-container move-from-right">
+                        <div class="col-lg-10 col-md-12 ml-0 ml-lg-5 pt-5 pb-5 text-center">
+                            <div class="">
+                                <h2>Chuyên môn tài chính từ một nhà cung cấp chuyên gia</h2>
+                            </div>
+                            <div class="border-top border-danger mx-auto mt-5 mb-5"></div>
+                            <div>
+                                <p>Bộ phận Thế chấp Bất động sản của chúng tôi có thể cung cấp cho bạn lời khuyên tài chính chuyên nghiệp ở mọi giai đoạn trong quy trình tài sản của bạn.
+                                    Từ các khoản thế chấp và bảo hiểm nhân thọ đến các khoản đầu tư và lương hưu, v.v., chúng tôi luôn đồng hành cùng bạn trên mọi chặng đường.</p>
+                            </div>
+                            <a href="mortgage.html" class="btn">Yêu Cầu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Mortgage Calculator Section-->
+
+        <!--Start Advise Section-->
+        <section>
+            <div class="advice-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 mt-xl-5 advice-text">
+                            <h1>Mang đến cho người mua lần thứ hai những lựa chọn tuyệt vời</h1>
+                            <div class="border-top border-danger text-center mt-4 mb-4"></div>
+                            <p>Cho dù bạn đang giao dịch tăng hay giảm quy mô, bạn sẽ biết rằng thị trường thế chấp đã thay đổi và phát triển trong những năm gần đây. Bây giờ hơn bao giờ hết,
+                                bạn cần một cố vấn có kinh nghiệm ở góc của bạn nêu chi tiết các tùy chọn có sẵn và cho bạn lời khuyên cũng như hỗ trợ bạn cần.</p>
+                            <!-- Button trigger modal -->
+                            <div class="text-center">
+                                <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Liên hệ chúng tôi</button> 
+                            </div> 
+                        </div>
+                        <div class="col-md-5 mt-5 pt-md-3 pt-lg-0">
+                            <img src="assets/img/mortgage/mortgage02.jpg" class="img-fluid" alt="women talking">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advice-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 mt-5 pt-md-3 pt-lg-0 order-2 order-md-1">
+                            <img src="assets/img/mortgage/mortgage03.jpeg" class="img-fluid" alt="packing out from boxes">
+                        </div>
+                        <div class="col-md-7 mt-xl-5 advice-text order-1 order-md-2">
+                            <h1>Người mua lần đầu – đảm bảo thế chấp đầu tiên của bạn</h1>
+                            <div class="border-top border-danger text-center mt-4 mb-4"></div>
+                            <p>Áp dụng cho thế chấp của bạn có thể cảm thấy phức tạp. Với hơn 20 năm kinh nghiệm dưới vành đai của chúng tôi và đã tổ chức
+                                hàng ngàn khoản thế chấp cho người mua lần đầu trên khắp Ireland, bạn có thể tin tưởng vào chúng tôi để được tư vấn rõ ràng và hướng dẫn
+                                ngay trong suốt quá trình thế chấp</p>
+                            <!-- Button trigger modal -->
+                            <div class="text-center">
+                                <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Liên hệ chúng tôi</button> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Start Footer Widget Section-->
+            <div class="footer-widget-border">
+                <div class="container-fliud footer-widget">
+                    <div class="row pt-5 pb-5 align-items-center">
+                        <div class="col-md-6 col-lg-3 text-center footer-widget-text">
+                            <h1>Đội ngũ của chúng tôi</h1>
+                            <p>Người dân địa phương có kinh nghiệm</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mt-3 text-center social-media">
+                            <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                            <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                            <a href="http://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                            <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mt-5 mt-lg-0 text-center">
+                            <a href="contact.html" class="btn">Đặt một câu hỏi</a>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mt-5 mt-lg-0 text-center">
+                            <a href="request-valuation.html" class="btn">Yêu cầu thẩm định</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Start Footer Widget Section-->
+
+            <div class="advice-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 mt-xl-5 advice-text">
+                            <h1>Giải thích chương trình Trợ giúp để Mua</h1>
+                            <div class="border-top border-danger text-center mt-4 mb-4"></div>
+                            <p>Là người mua lần đầu, chương trình Hỗ trợ mua của chính phủ Ireland là một sáng kiến hoàn thuế có thể trị giá tới 30.000 € đối với việc mua
+                                ngôi nhà đầu tiên của bạn. Bạn sẽ tìm thấy tất cả lời khuyên bạn cần trong hướng dẫn Trợ giúp mua của chúng tôi tại đây và bạn cũng có thể xem mình có đủ điều kiện tham gia chương trình hay không,
+                                và tính xem bạn được hưởng bao nhiêu.</p>
+                            <!-- Button trigger modal -->
+                            <div class="text-center">
+                                <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Liên hệ chúng tôi</button> 
+                            </div> 
+                        </div>
+                        <div class="col-md-5 mt-5 pt-md-3 pt-lg-0">
+                            <img src="assets/img/mortgage/mortgage04.jpg" class="img-fluid" alt="laptop on the table">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advice-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 mt-5 pt-md-3 pt-lg-0 order-2 order-md-1">
+                            <img src="assets/img/mortgage/mortgage05.jpeg" class="img-fluid" alt="women and a man talking">
+                        </div>
+                        <div class="col-md-7 mt-xl-5 advice-text order-1 order-md-2">
+                            <h1>Cung cấp cho nhà đầu tư các giải pháp hợp lý</h1>
+                            <div class="border-top border-danger text-center mt-4 mb-4"></div>
+                            <p>Cho dù bạn là nhà đầu tư bất động sản có kinh nghiệm hay chủ nhà lần đầu, bạn cần một hợp đồng thế chấp mua để cho phép giúp bạn tận dụng tối đa
+                                tài sản của bạn. Với rất nhiều nhà cung cấp mới trên thị trường, chúng tôi sẽ cung cấp cho bạn lời khuyên cụ thể mà bạn cần và làm việc với bạn từng bước để nhận được
+                                thế chấp mua để cho thuê tốt nhất đáp ứng nhu cầu của bạn.</p>
+                            <!-- Button trigger modal -->
+                            <div class="text-center">
+                                <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Liên hệ chúng tôi</button> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Advise Section-->
+
+        <!-- Start Three Column Section -->
+        <section class="three-coloumn-sec">
+            <div class="container p-0 pt-lg-5">     
+                <div class="row what-we-do pt-lg-5 pb-lg-5 text-center">
+                    <div class="col-md-12 col-lg-4">
+                        <a href="buyAdvice.html">
+                            <img src="assets/img/index/advice01.jpg" class="img-fluid pt-3" alt="women in business">
+                            <h3 class="my-4 text-center">TƯ VẤN CHO NGƯỜI MUA</h3>
+                            <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-3"></div>
+                            <p>Mua tài sản là một quá trình phức tạp. Với hơn 30 năm kinh nghiệm làm việc với người mua tất cả
+                                trên khắp Ireland, chúng tôi đã nghiên cứu và phát triển tuyển tập các hướng dẫn và tài nguyên hữu ích để cung cấp
+                                bạn với cái nhìn sâu sắc bạn cần.</p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-4">
+                        <a href="contact.html">
+                            <img src="assets/img/advice/advice08.jpeg" class="img-fluid pt-3" alt="contact icons">
+                            <h3 class="my-4 text-center">LIÊN LẠC</h3>
+                            <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-3"></div>
+                            <p>Bất kể truy vấn của bạn là gì, nhóm của chúng tôi đã sẵn sàng và chờ đợi phản hồi từ bạn.</p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-4">
+                        <a href="research.html">
+                            <img src="assets/img/index/research01.jpg" class="img-fluid pt-3" alt="monitor screen picture">
+                            <h3 class="my-4 text-center">RESEARCH</h3>
+                            <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-3"></div>
+                            <p>Áp dụng các phương pháp nghiên cứu chuyên sâu, chúng tôi thường xuyên đăng tải các thông tin cập nhật, xu hướng, dự báo thị trường
+                                và nhiều hơn nữa giúp bạn đưa ra các quyết định về tài sản sáng suốt được hỗ trợ bởi các thông tin và dữ kiện xác thực.</p>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!-- End Three Column Section -->
+
+        <!--Start Footer Section-->
+        <div class="footer-widget-green-border mt-5">
+            <div class="footer-widget-green-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mb-xl-0  text-center move-from-right">
+                            <p class="m-0">Chúng tôi là những chuyên gia nghiên cứu thị trường làm việc với khách hàng để tạo ra chất lượng cao, dựa trên dữ liệu
+                                và nghiên cứu thị trường bất động sản vô song.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h4>Thông tin liên lạc</h4>
+                        <div class="footer-address">
+                            <p>35, Hoà Minh 14, Liên Chiểu, Đà Nẵng</p>
+                            <span>Phone: 0987263397</span>
+                            <span>Email: leanhduc1510@gmail.com</span>
+                        </div>   
+                    </div>
+                 
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                        <h4>Liên hệ nhanh</h4>
+                        <ul class="pl-0">
+                            <li><a href="local-properties.html">Dự án</a></li>
+                            <li><a href="mortgage.html">Thế chấp</a></li>
+                            <li><a href="request-valuation.html">Yêu cầu định giá</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12 mt-3 text-center social-media">
+                        <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="http://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                        <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-top border-dark w-100 mx-auto"></div>
+                <div class="row">
+                    <div class="col-lg-12 footer-bottom text-center">
+                        <p class="footer-text m-0">
+                            Dự án bất động sản
+                        </p>
+                    </div>   
+                </div>
+            </div> 
+        </footer>
+        <!--Start Footer Section-->
+
+        <!--Start Scripts-->
+        <!--Bootstarp-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <!--ScrollReveal Js https://github.com/jlmakes/scrollreveal-->
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+        <!--EmailJs-->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script>
+        (function() {
+        emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
+        })();
+        </script>
+        <!--JS-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/mortgage-calc.js"></script>
+    </body>
+</html>

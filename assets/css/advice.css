@@ -1,0 +1,144 @@
+/*========================Satrt Hero Section====================*/
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.image-caption {
+    position: absolute;
+    color: #fff;
+}
+
+.image-caption h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.image-caption p {
+    padding: 40px 100px 0;
+    font-size: 25px;
+}
+
+/*==========================Start Advice tips Section=====================*/
+.advice-header {
+    background: var(--bg-color);
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}  
+.image img {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.text-white-bg {
+    background: #fff;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,.2);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-white-bg h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.text-white-bg p {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+/*---Advice Carousel---*/
+.advice-carousel {
+    background: dimgrey;
+}
+
+.advice-carousel i {
+    font-size: 35px;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.advice-carousel h1 {
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.advice-carousel #resent-propery-slider {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#resent-propery-slider .swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#resent-propery-slider .swiper-container .swiper-slide .property-list {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 30px 0 30px 0;
+    height: 500px;
+    
+}
+
+#resent-propery-slider .swiper-container .swiper-slide .property-list p {
+    font-weight: 500;
+}
+
+#resent-propery-slider .swiper-container .swiper-slide .property-list .image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px 0 30px 0;
+    margin-bottom: 10px;
+}
+
+#resent-propery-slider .swiper-container .swiper-slide .property-list .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0 ;
+    padding-bottom: 50px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--second-color);
+}
+
+
+/*=====================Start Media Queries======================*/
+
+@media only screen and (max-width: 991px) {
+    .image-caption h1 {
+        font-size: 30px;
+    }
+    .image-caption p {
+        font-size: 16px;
+        padding: 0;
+    }
+    .text-white-bg {
+        margin: 0;
+    }
+    .advice-header {
+        margin-top: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;  
+    }  
+}
+
+@media only screen and (max-width: 767px) {
+    .image-caption h1 {
+        font-size: 30px;
+    }
+}
+

@@ -1,0 +1,110 @@
+.img-container img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    position: relative;
+}
+
+.image-caption {
+    position: absolute;
+    color: #fff;
+}
+
+.image-caption h2 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.text-header {
+    background: var(--bg-color);
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.text-white-bg {
+    background: #fff;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,.2);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.custom-bg {
+    background: var(--bg-color);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.custom-bg-img {
+    margin-top: 80px;
+}
+
+.text-header i {
+    font-size: 40px;
+    padding-right: 20px;
+    color: var(--main-color);
+}
+
+.header-elem {
+    background: var(--text-color);
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.header-elem i, h2 {
+    color: #fff;
+}
+
+.header-elem h2 {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.header-elem i {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.card-body-elem h3 {
+    font-size: 22px;
+    color: var(--main-color);  
+}
+
+.card-body-elem h4 {
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+/*=====================Start Media Queries======================*/
+@media only screen and (max-width: 991px) {
+    .custom-bg {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .header-elem h2 {
+        font-size: 16px;  
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .image-caption h2 {
+        font-size: 30px;
+    }
+    .custom-bg {
+        margin-top: 40px;
+    }
+    .text-header h1 {
+        font-size: 22px;
+    }
+    .text-header {
+        margin-top: 20px;
+    }
+}

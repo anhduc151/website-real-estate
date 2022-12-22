@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Red Coral Realty This is a free service and there is no obligation to engage our services.">
+        <title>Yêu cầu định giá</title>
+        <!--Bootsrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--Favicon-->
+        <link rel="icon" href="./assets/img/logo/building.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="./assets/img/logo/building.ico" type="image/x-icon"/>
+        <!--Style-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/request-valuation.css">
+    </head>
+    <body>
+        <!--Start Header Section-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <img src="./assets/img/logo/logo.svg" alt="">
+                    <a class="navbar-brand" src="./assets/img/logo/logo.svg" href="index.html"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dự án</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="local-properties.html">Dự án các tỉnh ở Phía Bắc</a>
+                                    <a class="dropdown-item" href="abroad-properies.html">Dự án các tỉnh ở phía Nam </a>
+                                    <a class="dropdown-item" href="projects.html">Quản lý dự án</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mortgage.html">Tư vấn thế chấp</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSecondMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thông tin thêm</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownSecondMenuLink">
+                                    <a class="dropdown-item" href="research.html">Đội nghiên cứu dự án</a>
+                                    <a class="dropdown-item" href="buyAdvice.html">Lời khuyên cho người mua</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownThirdMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Liên hệ</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownThirdMenuLink">
+                                    <a class="dropdown-item" href="request-valuation.html">Yêu cầu định giá</a>
+                                    <a class="dropdown-item" href="contact.html">Dịch vụ khách hàng</a>
+                                </div>
+                            </li> 
+                           
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+        </header>
+        <!--End Header Section-->
+
+        <!--Start Back to top button-->
+        <button id="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i>  
+        </button>
+        <!--End Back to top button-->
+
+        <!--Satrt Hero Section--> 
+        <section class="hero-img"> 
+            <div id="container">
+                <div class="row align-items-center">
+                    <div class="img-container">
+                        <img src="assets/img/req-valuation/request-valuation01jpg.jpg" class="img-fluid" alt="girl with laptop">
+                    </div>
+                    <div class="col-12 text-center text-lg-right image-caption move-from-left">
+                        <h1>Yêu cầu định giá</h1>
+                    </div>
+                </div>
+            </div>   
+        </section>     
+        <!--Satrt Hero Section-->
+        
+        <!--Start Request Valuation Section-->
+        <section class="req-value-section">
+            <div class="request-container">
+                <div class="row">
+                    <div class="col-lg-6 text-center order-2 order-lg-1">
+                        <div class="col-md-12 justify-content-center">
+                            <form id="myForm" onsubmit="return sendMail(this);" class="signup-form" >
+                                <div class="requet-content">
+                                    <h2>Yêu cầu định giá</h2>
+                                    <div class="radio-btns">
+                                        <input type="radio" id="sell" name="message4" value="sell">
+                                        <label for="sell">Bán</label>
+                                        <input type="radio" id="let" name="message4" value="let">
+                                        <label for="let">Để cho</label>
+                                    </div>
+                            
+                                    <div class="form-row">
+                                        <div class="col-md-12 form-group text-left">
+                                            <label for="location">Địa điểm *</label>
+                                            <select name="message2" id="location" class="form-control" required>
+                                                <option value="">Chọn địa điểm*</option>   
+                                            </select>
+                                            <label for="area">Khu vực *</label>
+                                            <select name="message3" id="area" class="form-control" required>
+                                                <option value="">Chọn khu vực*</option>   
+                                            </select>
+                                            <label for="name">Tên đầy đủ *</label>
+                                            <input type="text" class="form-control" id="name" name="name" required>
+                                            <label for="email">Email *</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                            <label for="phone">Số điện thoại *</label>
+                                            <input type="number" class="form-control" id="phone" name="phone" required>
+                                            <label for="inputDay">Chọn thời gian gọi lại ưa thích *</label>
+                                            <select id="inputDay" class="form-control" name="time" required>
+                                                <option value="">Lựa chọn</option>
+                                                <option>9am - 1pm</option>
+                                                <option>1pm - 4pm</option>
+                                                <option>4pm - 9pm</option>
+                                                <option>Bất cứ lúc nào</option>
+                                            </select>    
+                                        </div>
+                                        <div class="btn">
+                                            <button type="submit" name="submit" class="submit-btn">Nộp</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 align-self-center justify-content-center">
+                        <div class="col-md-12 col-lg-9 text-center">
+                            <div class="form-header-h1 ">
+                                <h1>Suy nghĩ về việc bán hoặc cho tài sản của bạn?</h1>
+                            </div>
+                            <div class="border-top border-danger mx-auto mt-md-5 mb-md-5"></div>
+                            <div class="form-header-p">
+                                <p>Tcủa anh ấy là một dịch vụ miễn phí và không có nghĩa vụ phải tham gia các dịch vụ của chúng tôi, vì vậy nếu bạn cần định giá cho
+                                    bán hoặc cho thuê tài sản của bạn, chúng tôi sẵn sàng trợ giúp. Bạn có thể đăng ký định giá với bất kỳ văn phòng nào của chúng tôi.
+                                    Khi chúng tôi có thông tin chi tiết của bạn, chúng tôi sẽ gọi cho bạn vào thời điểm thích hợp cho bạn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Request Valuation Section-->
+        
+        <!--Start Info Section-->
+        <section class="features">
+            <div class="container">
+                <div class="features-content">
+                    <div class="row">
+                        <div class="col-md-12 pt-5 features-box move-from-left">
+                            <h3 class="features-h4 text-center">Dịch vụ đại lý toàn bộ bất động sản: <strong>10.000.000 +VAT</strong></h3>
+                            <p class="features-text lead text-center">Những ngày trả cho một đại lý bất động sản vài nghìn Euro để bán một tài sản đã không còn nữa. kinh nghiệm của chúng tôi,
+                                các đại lý bất động sản đủ điều kiện sẽ xử lý việc bán tài sản của bạn từ đầu đến cuối. Chúng tôi sẽ giúp bạn có được giá tốt nhất cho tài sản của bạn
+                                nhưng phí của chúng tôi chỉ là €1599+VAT, giúp bạn tiết kiệm hàng nghìn đô la.</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container white-bg">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Bán nhà của bạn - Thẩm định thị trường</h1>
+                        <p>Btrước khi xem xét đưa một tài sản ra thị trường để bán hoặc với mục đích kiếm lời
+                            thu nhập cho thuê tiềm năng, điều cần thiết là bạn phải có cảm nhận thực sự về giá trị thị trường của nó – đó là nơi
+                            chúng tôi đến. Đội ngũ chuyên gia định giá của chúng tôi có kiến thức chuyên sâu về thị trường bất động sản ở bạn
+                            khu vực và sẽ sẵn lòng hướng dẫn bạn với kiến thức chuyên môn và địa phương của họ. Thường được gọi là một
+                            Đánh giá thị trường định giá của chúng tôi sẽ cung cấp cho bạn giá hướng dẫn cực kỳ quan trọng để thực hiện
+                            một quyết định sáng suốt khi nói đến việc bán nhà của bạn.</p>
+                        <p class="lead">Nếu bạn đang nghĩ đến việc bán, hãy điền vào biểu mẫu trên và văn phòng địa phương của bạn sẽ liên hệ.</p>
+                    </div>
+                    <div class="col-12">
+                        <h1>Định giá ngân hàng, pháp lý và doanh thu</h1>
+                        <p>Đôi khi bạn có thể cần định giá tài sản vì các lý do liên quan đến Ngân hàng, Pháp lý hoặc Doanh thu.
+                            Nhóm Định giá Nhà ở chuyên dụng của chúng tôi cung cấp dịch vụ chuyên nghiệp và nhanh nhạy, sử dụng
+                            kiến thức thị trường chi tiết và cơ sở dữ liệu tài sản toàn diện cho mục đích so sánh, cung cấp định giá cho
+                            khách hàng chủ yếu trong các lĩnh vực chính sau:</p>
+                        <ul>
+                            <li>chứng thực di chúc</li>
+                            <li>Luật gia đình</li>
+                            <li>Chuyên gia làm chứng</li>
+                            <li>Sổ đỏ/ Sổ xanh Định giá cho các mục đích Ngân hàng và Thế chấp</li>
+                            <li>Định giá liên quan đến doanh thu</li>
+                            <li>chuyển gia đìnhr</li>
+                            <li>Thuế lãi vốn</li>
+                            <li>Thuế mua lại vốn</li>
+                            <li>Quỹ hưu trí tự quản lý</li>
+                            <li>Chương trình giao dịch công bằng HSE</li>
+                        </ul>
+                        <p class="lead">Để tận dụng một trong các dịch vụ trên, vui lòng liên hệ với chúng tôi tại<a href="tel:+84987266338"> +84987266338</a> hoặc leanhduc1510@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Info Section-->
+        
+        <!--Start Team Section-->
+        <section class="team">
+            <div class="container my-3 py-3 text-center">
+                <div class="row mb-5 mt-5">
+                    <div class="col">
+                        <h1>Gặp gỡ nhóm định giá của chúng tôi</h1>
+                        <p class="mt-3">Đối với định giá ngân hàng, pháp lý và doanh thu</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic01.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Mark Lewis">
+                                        <h2>Anh Đức</h2>
+                                        <h3>Giám đốc</h3>
+                                        <h4>bất động sản</h4>
+                                        <p><strong>Phone: </strong> +9487263397<br><strong>Email: </strong> leanhduc1510@gmail.com</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-back">
+                                    <div class="card align-items-center">
+                                        <h3>Anh Đức</h3>
+                                        <p class="text-uppercase">Giám đốc</p>
+                                        <p><strong>Phone: </strong> +353 1 237 6411<br><strong>Mobil: </strong> +84 87 255 6677<br><strong>Email: </strong> leanhduc1510@gmail.com</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Anh Đức là thành viên của nhóm Red Coral từ năm 2011. Từng là giám đốc của The Group, anh ấy đã rời đi vào năm 2018 để mở văn phòng nhượng quyền ở Tây Dublin.</p>
+                                        <p class="lead">Anh ấy trở lại nhóm chính vào tháng 2 năm 2020 với tư cách là giám đốc trong nhóm định giá.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic02.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Fiona Grant">
+                                        <h2>Thảo Vân</h2>
+                                        <h3>Trưởng phòng định giá thương mại</h3>
+                                        <h4>Bất động sản</h4>
+                                        <p><strong>Phone: </strong> +8451 237 6422<br><strong>Email: </strong> thaovan@gmail,com</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Thảo Vân</h3>
+                                        <p class="text-uppercase"> Trưởng phòng định giá thương mại</p>
+                                        <p><strong>Phone: </strong> +353 1 237 6422<br><strong>Mobil: </strong> +845 86 236 8739<br><strong>Email: </strong> thaovan@gmail.com</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Thảo Vân có nhiều kinh nghiệm trong thị trường bất động sản thương mại và đã gia nhập Red Coral vào tháng 1 năm 2021 với tư cách là Trưởng bộ phận Định giá Thương mại. Kinh nghiệm, mối quan hệ của cô ấy
+                                            kỹ năng phát triển và sự cống hiến để đảm bảo dịch vụ tốt nhất trong lớp đã dẫn đến một danh sách khách hàng đặc biệt.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-2 mb-md-5 mt-md-0">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic03.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="David Cowhey">
+                                        <h2>Hữu Hào </h2>
+                                        <h3>Giám đốc</h3>
+                                        <h4>Bất động sản</h4>
+                                        <p><strong>Phone: </strong> +353 1 237 6433<br><strong>Email: </strong> huuhao@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Hữu Hào</h3>
+                                        <p class="text-uppercase">Portfolio Team Manager</p>
+                                        <p><strong>Phone: </strong> +8451 237 6433<br><strong>Mobil: </strong> +353 85 219 8429<br><strong>Email: </strong> huuhao@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Hữu Hào hiện đang điều hành các dự án định giá lớn với một số tập đoàn, với danh mục đầu tư khối lượng lớn bất động sản nhà ở.</p>
+                                        <p class="lead">Hữu Hào gia nhập San Hô Đỏ vào năm 2017 và đã kết hợp kiến thức pháp lý của mình với nền tảng bất động sản nhà ở của mình.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 mb-4 mt-lg-5 pt-lg-5">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic04.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Clare O'Grady">
+                                        <h2>Thảo Băng </h2>
+                                        <h3>Giám đốc</h3>
+                                        <h4>Bất động sản</h4>
+                                        <p><strong>Phone: </strong> +845 1 237 6444<br><strong>Email: </strong> thaobang@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Thảo Băng</h3>
+                                        <p class="text-uppercase">Giám đốc</p>
+                                        <p><strong>Phone: </strong> +845 1 237 6444<br><strong>Mobil: </strong> +845 87 987 1234<br><strong>Email: </strong> ThaoBang@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Thảo Băng gia nhập Red Coral vào năm 2004 và đã kết hợp kiến thức nền tảng về ngân hàng với kiến thức sâu rộng về bất động sản của mình. Clare đã mang theo nhiều kinh nghiệm trong việc quản lý khách hàng từ vai trò trước đây của cô ấy với Goodbody Stockbrokers với tư cách là một tư nhân.
+                                            người quản lý danh mục đầu tư của khách hàng và sở hữu mức độ chính trực, tính linh hoạt cao và kỹ năng giao tiếp giữa các cá nhân xuất sắc.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-5 mb-4 mt-md-0 mt-lg-5 pt-lg-5">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic06.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Michéal O'Looney">
+                                        <h2>Xuân Mạnh</h2>
+                                        <h3>Người định giá nhà ở</h3>
+                                        <h4>Bất động sản</h4>
+                                        <p><strong>Phone: </strong> +845 1 237 6455<br><strong>Email: </strong> xuanmanh@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Xuân Mạnh</h3>
+                                        <p class="text-uppercase">Người định giá nhà ở</p>
+                                        <p><strong>Phone: </strong> +845 1 237 6455<br><strong>Mobil: </strong>+845 83 567 4532<br><strong>Email: </strong> xuanmanh@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Xuân Mạnh tốt nghiệp Học viện Công nghệ Limerick với Bằng Quản lý và Định giá Tài sản vào năm 2014. Anh gia nhập Red Coral vào tháng 7 năm 2015 và xây dựng một
+                                            danh tiếng là một người giao tiếp xuất sắc với kỹ năng bán hàng xuất sắc tại các chi nhánh Clonakilty & Skibbereen của họ.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-5 mb-4 mt-md-0 mt-lg-5 pt-lg-5">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic01.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Harriet Delany">
+                                        <h2>Hoàng Huy </h2>
+                                        <h3>Người định giá nhà ở</h3>
+                                        <h4>Bất động sản</h4>
+                                        <p><strong>Phone: </strong> +845 1 237 6466<br><strong>Email: </strong> hoanghuy@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Hoàng Huy</h3>
+                                        <p class="text-uppercase">Người định giá nhà ở</p>
+                                        <p><strong>Phone: </strong>+845 1 237 6466<br><strong>Mobil: </strong> +845 86 645 7654<br><strong>Email: </strong> hoanghuy@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Anh ấy đã thành công trong việc lãnh đạo bộ phận cho đến năm 2018 khi cô ấy đảm nhận thử thách quản lý chi nhánh Savills Central Dublin phụ trách việc bán hàng tại Dublin 2, 4, 6, 6W, 14 và 16.</p>
+                                        <p class="lead">Anh gia nhập nhóm Red Coral vào tháng 1 năm 2021 và cung cấp các định giá chính thức cho các tổ chức tài chính và người cho vay.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--End Team Section-->
+
+        <!-- Start Three Column Section -->
+        <section class="three-coloumn-sec">
+            <div class="container p-0 pt-lg-5">     
+                <div class="row what-we-do pt-lg-5 pb-lg-5 text-center">
+                    <div class="col-md-12 col-lg-4">
+                        <a href="buyAdvice.html">
+                            <img src="assets/img/index/advice01.jpg" class="img-fluid pt-3" alt="women in business" >
+                            <h3 class="my-4 text-center">TƯ VẤN CHO NGƯỜI MUA</h3>
+                            <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-3"></div>
+                            <p>Mua tài sản là một quá trình phức tạp. Với hơn 30 năm kinh nghiệm làm việc với người mua tất cả
+                                trên khắp Ireland, chúng tôi đã nghiên cứu và phát triển tuyển tập các hướng dẫn và tài nguyên hữu ích để cung cấp
+                                bạn với cái nhìn sâu sắc bạn cần.
+                            </p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-4">
+                        <a href="mortgage.html">
+                            <img src="assets/img/index/mortgages01.jpg" class="img-fluid pt-3" alt="mortgages picture" >
+                            <h3 class="my-4 text-center">THẾ CHẤP</h3>
+                            <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-3"></div>
+                            <p>Từ việc sẵn sàng thế chấp đến chuẩn bị và nộp đơn đăng ký đầy đủ của bạn, bộ phận Thế chấp của chúng tôi
+                                có cái nhìn sâu sắc và kiến thức chuyên môn cần thiết để giúp đảm bảo cho bạn kết quả tốt nhất có thể.
+                            </p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-4">
+                        <a href="research.html">
+                            <img src="assets/img/index/research01.jpg" class="img-fluid pt-3" alt="monitor screen picture" >
+                            <h3 class="my-4 text-center">TÌM KIẾM</h3>
+                            <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-3"></div>
+                            <p>Áp dụng các phương pháp nghiên cứu chuyên sâu, chúng tôi thường xuyên đăng tải các thông tin cập nhật, xu hướng, dự báo thị trường
+                                và nhiều hơn nữa giúp bạn đưa ra các quyết định về tài sản sáng suốt được hỗ trợ bởi các thông tin và dữ kiện xác thực.
+                            </p>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!-- End Three Column Section -->
+
+        <!--Start Footer Section-->
+        <div class="footer-widget-green-border mt-5">
+            <div class="footer-widget-green-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mb-xl-0  text-center move-from-right">
+                            <p class="m-0">Chúng tôi là những chuyên gia nghiên cứu thị trường làm việc với khách hàng để tạo ra chất lượng cao, dựa trên dữ liệu
+                                và nghiên cứu thị trường bất động sản vô song.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h4>Thông tin liên lạc</h4>
+                        <div class="footer-address">
+                            <p>35, Hoà Minh 14, Liên Chiểu, Đà Nẵng</p>
+                            <span>Phone: 0987263397</span>
+                            <span>Email: leanhduc1510@gmail.com</span>
+                        </div>   
+                    </div>
+                 
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                        <h4>Liên hệ nhanh</h4>
+                        <ul class="pl-0">
+                            <li><a href="local-properties.html">Dự án</a></li>
+                            <li><a href="mortgage.html">Thế chấp</a></li>
+                            <li><a href="request-valuation.html">Yêu cầu định giá</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12 mt-3 text-center social-media">
+                        <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="http://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                        <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-top border-dark w-100 mx-auto"></div>
+                <div class="row">
+                    <div class="col-lg-12 footer-bottom text-center">
+                        <p class="footer-text m-0">
+                            Dự án bất động sản
+                        </p>
+                    </div>   
+                </div>
+            </div> 
+        </footer>
+        <!--Start Footer Section-->
+
+
+        <!--Start Scripts-->
+        <!--Bootstarp-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <!--ScrollReveal Js https://github.com/jlmakes/scrollreveal-->
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+        <!--EmailJs-->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script>
+        (function() {
+        emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
+        })();
+        </script>
+        <!--JS-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/request-loc-form.js"></script>
+    </body>
+</html>

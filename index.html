@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Red Coral Realty is a Real Estate agency who provide a wild range of services">
+        <title>BẤT ĐỘNG SẢN</title>
+        <!--Bootsrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--SwiperJs-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <!-- <link rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+        <!--Favicon-->
+        <link rel="icon" href="./assets/img/logo/building.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="./assets/img/logo/building.ico" type="image/x-icon"/>
+        <!--Style-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--Link icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <!--Start Header Section-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <img src="./assets/img/logo/logo.svg" alt="">
+                    <a class="navbar-brand" src="./assets/img/logo/logo.svg" href="index.html"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Trang chủ<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dự án</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="local-properties.html">Dự án các tỉnh ở Phía Bắc</a>
+                                    <a class="dropdown-item" href="abroad-properies.html">Dự án các tỉnh ở phía Nam </a>
+                                    <a class="dropdown-item" href="projects.html">Quản lý dự án</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mortgage.html">Tư vấn thế chấp</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSecondMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thông tin thêm</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownSecondMenuLink">
+                                    <a class="dropdown-item" href="research.html">Đội nghiên cứu dự án</a>
+                                    <a class="dropdown-item" href="buyAdvice.html">Lời khuyên cho người mua</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownThirdMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Liên hệ</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownThirdMenuLink">
+                                    <a class="dropdown-item" href="request-valuation.html">Yêu cầu định giá</a>
+                                    <a class="dropdown-item" href="contact.html">Dịch vụ khách hàng</a>
+                                </div>
+                            </li> 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownThirdMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tài khoản</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownThirdMenuLink">
+                                    <a class="dropdown-item" href="login.html">Đăng nhập</a>
+                                    <a class="dropdown-item" href="signup.html">Đăng ký</a>
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+        </header>
+        <!--End Header Section-->
+        <!--Start search -->
+        <div class="navbar__search">
+            <div class="navbar__search-inputs">
+                <input type="text" placeholder="Tìm kiếm dự án...">
+                <div class="navbar__search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+        <!--End search -->
+        <!--Start Back to top button-->
+        <button id="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i> 
+        </button>
+        <!--End Back to top button-->
+
+        <!--Start Hero Section-->
+        <section class="hero-banner">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/index/cork-city02.jpg" class="d-block w-100" alt="Cork city">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Ngôi nhà mơ ước trong và ngoài nước<br> Mua và bán tài sản bất động sản</h2>
+                            <p>Định hình tương lai của một người xây dựng, một cộng đồng tại một thời điểm.<br> Liên hệ với chúng tôi để bắt đầu hành trình mua đất của bạn.</p> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/index/dublin-night02.jpg" class="d-block w-100" alt="Dublin city">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Đổi mới để tạo giá trị trong bất động sản hơn 30 năm</h2>
+                            <p>Niềm tin bền vững đến từ các kỹ năng đa lĩnh vực đã đạt được qua nhiều thập kỷ của những người thực hiện dựa trên kết quả</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/index/belfast-castle.jpg" class="d-block w-100" alt="Belfast Castle">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Tạo ra giá trị thực thông qua quản lý bất động sản chuyên nghiệp, từng đoạt giải thưởng</h2>
+                            <p>Kiến thức ngành sâu để trao quyền cho quan hệ đối tác địa phương và toàn cầu</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/index/wexford-house.jpg" class="d-block w-100" alt="Wexford-house">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Chuyên gia bất động sản địa phương<br> Chúng tôi xử lý toàn bộ việc bán hàng từ đầu đến cuối bao gồm cả lượt xem</h2>
+                            <p>Chúng tôi xử lý toàn bộ việc bán hàng từ đầu đến cuối bao gồm cả lượt xem và mua sắm</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Trước đó</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Kế tiếp</span>
+                </a>
+            </div>
+        </section>
+        <!--Start Text Container-->
+        <div class="text-container">
+            <div class="row pt-5">
+                <div class="col-md-12 text-center">
+                    <h3>Suy nghĩ về việc mua bán 1 dự án </h3>
+                    <h4>Hãy chắc chắn rằng bạn liên hệ với chúng tôi trước!</h4>
+                </div>
+                <div class="col-md-6 text-lists pt-5">
+                    <ul>
+                        <li><i class="far fa-check-circle" aria-hidden="true"></i></li>
+                        <li>Chúng tôi là một đại lý bất động sản được cấp phép đầy đủ</li>
+                        <li><i class="far fa-check-circle" aria-hidden="true"></i></li>
+                        <li>Chúng tôi tính phí cố định 10.000.000đ + VAT – không có phụ phí ẩn</li>
+                        <li><i class="far fa-check-circle" aria-hidden="true"></i></li>
+                        <li>Dấu hiệu rao bán hấp dẫn được ghi đầy đủ trên tất cả dự án</li>
+                        <li><i class="far fa-check-circle" aria-hidden="true"></i></li>
+                        <li>Chúng tôi sẽ mang đến cho bạn mức giá tối đa và giúp bạn tiết kiệm rất nhiều chi phí</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-lists pt-5">
+                    <ul>
+                        <li><i class="far fa-check-circle" aria-hidden="true"></i></li>
+                        <li>Dự án của chúng tôi bao gồm tất cả các tỉnh thành ở Việt Nam</li>
+                        <li><i class="far fa-check-circle" aria-hidden="true"></i></li>
+                        <li>Chúng tôi xử lý toàn bộ việc bán hàng từ đầu đến cuối bao gồm cả lượt xem</li>
+                        <li><i class="far fa-check-circle" aria-hidden="true"></i></li>
+                        <li>Chúng tôi sử dụng các nhiếp ảnh gia chuyên nghiệp để chụp ảnh & sơ đồ tầng 2D</li>
+                        <li><i class="far fa-check-circle" aria-hidden="true"></i></li>
+                        <li>Chúng tôi quảng cáo dự án đúng chuẩn yêu cầu mà bạn cần</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 text-center pt-5">
+                    <h4>Dịch vụ đại lý bất động sản đầy đủ, không thỏa hiệp</h4>
+                    <p class="hero-btn-text"><span>10.000.000đ</span>+VAT @ 23%</p>
+                    <a href="request-valuation.html" class="btn-custom">
+                    <p>Đặt chỗ định giá miễn phí tài sản của tôi <i class="fas fa-long-arrow-alt-right ml-2"></i></p></a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center pr-4 pl-4">Tất cả các tài sản trên trang web này đang được bán theo hiệp ước riêng chứ không phải đấu giá.
+            Ưu đãi không ràng buộc về mặt pháp lý cho đến khi hợp đồng được ký kết.</p>
+        <!--End Text Container-->
+        <!--End Hero Section-->
+
+        <!--Start Resent Property Section-->
+        <section class="local-property-card-section pt-md-5">
+            <h2 class="move-from-left">Các dự án được thêm gần đây</h2>
+            <div class="text-right move-from-left mr-5 mb-3">
+                <a href="local-properties.html">Tất cả dự án <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box">
+                            <img src="assets/img/index/doolin-house-dublin01.jpeg" class="img-fluid" alt="Doolin House, Dublin">
+                            <div class="text">
+                                <h3>
+                                    Vạn Phú Shophouse Đại Từ
+                                </h3>
+                                <span>3.000.000.000 đ</span>
+                                <p class="text-left">Căn hộ, chung cư</p>
+                                <p class="text-left">Chúng tôi tự hào giới thiệu Ngôi nhà Vạn Phú Shophouse Đại Từ cho Thị trường bất động sản. Một phòng ngủ tuyệt vời này
+                                    căn hộ được trình bày trong tình trạng hoàn hảo</p>
+                                <div class="property-details">
+                                    <span>56 mét vuông</span>
+                                    <span>1 phòng ngủ</span>
+                                    <span>1 nhà tắm<span> 
+                                </div>
+                                <a href="projects.html" class="btn">Thêm dự án</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box">
+                            <img src="assets/img/index/glasnevin-dublin01.jpeg" class="img-fluid" alt="Glasnevin, Dublin">
+                            <div class="text">
+                                <h3>Khu đô thị Cao Xanh-Hà Khánh</h3>
+                                <span>10.000.000.000 đ</span>
+                                <p class="text-left">nhà bậc thang</p>
+                                <p class="text-left">Dự án khu đô thị Cao Xanh - Hà Khánh có diện tích hơn 93ha, thuộc quy hoạch phân khu xung quanh vịnh Cửa Lục của các xã phía Nam huyện Hoành Bồ trước đây, nay là TP. Hạ Long, tỉnh Quảng Ninh</p>
+                                <div class="property-details">
+                                    <span>160 mét vuông</span>
+                                    <span>3 phòng ngủ</span>
+                                    <span>1 nhà tắm</span> 
+                                </div>
+                                <a href="projects.html" class="btn">Thêm dự án</a>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box">
+                            <img src="assets/img/index/templeogue-dublin01.jpeg" class="img-fluid" alt="Templeogue, Dublin">
+                            <div class="text">
+                                <h3>Suntec City Long An</h3>
+                                <span>15.000.000.000 đ</span>
+                                <p class="text-left">Nhà đôi</p>
+                                <p class="text-left">Suntec City là dự án khu đô thị kiểu mẫu khép kín ven sông do chủ đầu tư Novaland phát triển tại trung tâm huyện Thủ Thừa, tỉnh Long An.</p>
+                                <div class="property-details">
+                                    <span>180 mét vuông</span>
+                                    <span>3 phòng ngủ</span>
+                                    <span>2 nhà tắm</span> 
+                                </div>
+                                <a href="projects.html" class="btn">Thêm dự án</a>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-none d-md-block">
+                        <div class="box">
+                            <img src="assets/img/index/charlotte-quay-dublin01.jpeg" class="img-fluid" alt="Charlotte Quay Dublin">
+                            <div class="text">
+                                <h3>Khu đô thị Ao Tiên Vân Đồn</h3>
+                                <span>6.000.000.000 đ</span>
+                                <p class="text-left">Căn hộ, chung cư</p>
+                                <p class="text-left">Khu đô thị Ao Tiên Vân Đồn là một trong những dự án khu đô thị mặt biển nổi bật nhất của khu kinh tế Vân Đồn, huyện Vân Đồn, tỉnh Quảng Ninh, với quy mô 115ha, vị trí đắc địa ngay đường ra cảng Ao Tiên. 
+
+                                    Dự án Ao Tiên Vân Đồn do Công ty TNHH MTV Du lịch Mai Quyền làm chủ đầu tư.</p>
+                                <div class="property-details">
+                                    <span>81 mét vuông</span>
+                                    <span>4 phòng ngủ</span>
+                                    <span>2 nhà tắm</span> 
+                                </div>
+                                <a href="projects.html" class="btn">Thêm dự án</a>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-none d-md-block">
+                        <div class="box">
+                            <img src="assets/img/index/dingle01.jpeg" class="img-fluid" alt="Ventry, Dingle, Co Kerry">
+                            <div class="text">
+                                <h3>Ruby Residence Ngã Bảy</h3>
+                                <span>7.500.000.000 đ</span>
+                                <p class="text-left">Căn hộ, chung cư</p>
+                                <p class="text-left">Ruby Residence là tên thương mại của dự án Khu đô thị Nông Thôn Mới nâng cao Đại Thành tại trung tâm TP. Ngã Bảy, tỉnh Hậu Giang.</p>
+                                <div class="property-details">
+                                    <span>200 mét vuông</span>
+                                    <span>4 phòng ngủ</span>
+                                    <span>3 nhà tắm</span> 
+                                </div>
+                                <a href="projects.html" class="btn">Thêm dự án</a>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-none d-md-block">
+                        <div class="box">
+                            <img src="assets/img/index/dingle01.jpeg" class="img-fluid" alt="Ventry, Dingle, Co Kerry">
+                            <div class="text">
+                                <h3>Ruby Residence Ngã Bảy</h3>
+                                <span>7.500.000.000 đ</span>
+                                <p class="text-left">Căn hộ, chung cư</p>
+                                <p class="text-left">Ruby Residence là tên thương mại của dự án Khu đô thị Nông Thôn Mới nâng cao Đại Thành tại trung tâm TP. Ngã Bảy, tỉnh Hậu Giang.</p>
+                                <div class="property-details">
+                                    <span>200 mét vuông</span>
+                                    <span>4 phòng ngủ</span>
+                                    <span>3 nhà tắm</span> 
+                                </div>
+                                <a href="projects.html" class="btn">Thêm dự án</a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <!--End Resent Property Section-->
+
+        <!--Start Mortgage Calculator Section-->
+        <section class="mortgage-calc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 d-none d-lg-block mortgage-container move-from-left">
+                        <h2>Tính thế chấp của bạn</h2>
+                        <p>SỐ TIỀN VAY đ<input type="number" id="amount" min="1" max="2000000" onchange="calcLoan()"></p>
+                        <p>LÃI SUẤT %<input type="number" id="iterest_rate" min="0" max="100" value="2.7" step=".1" onchange="calcLoan()"></p>
+                        <p class="mb-5 pb-4">THỜI HẠN VAY (NĂM) <input type="number" id="years" min="1" max="35" value="35" step="1" onchange="calcLoan()"></p>
+                        <div id="payment" class="payment text-center mt-5"></div> 
+                    </div>
+                    <div class="col-lg-7 mortgage-text-container move-from-right">
+                        <div class="col-lg-10 col-md-12 ml-0 ml-lg-5 pt-5 pb-5 text-center">
+                            <div class="">
+                                <h2>Chuyên môn tài chính từ một nhà cung cấp chuyên gia</h2>
+                            </div>
+                            <div class="border-top border-danger mx-auto mt-5 mb-5"></div>
+                            <div>
+                                <p>Bộ phận Thế chấp Bất động sản của chúng tôi có thể cung cấp cho bạn lời khuyên tài chính chuyên nghiệp ở mọi giai đoạn trong quy trình tài sản của bạn.
+                                    Từ các khoản thế chấp và bảo hiểm nhân thọ đến các khoản đầu tư và lương hưu, v.v., chúng tôi luôn đồng hành cùng bạn trên mọi chặng đường.</p>
+                            </div>
+                            <a href="mortgage.html" class="btn">Yêu Cầu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Mortgage Calculator Section-->
+
+        <!--Start Resent Abroad Property Section -->
+        <section id="resent-property-section">
+            <div class="container-fluid">
+                <h2 class="ml-4 move-from-left">Hoặc bạn nghĩ về các dự án nước ngoài ...</h2>
+                <h3 class="ml-4 mb-4 move-from-left">Các dự án được thêm gần đây ở nước ngoài</h3>
+                <div class="text-right move-from-left">
+                    <a href="abroad-properies.html">Các dự án gần đây<i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+                </div>
+                <!--Resent Property Slider-->
+                <!--Get from https://swiperjs.com/get-started-->
+                <div id="resent-propery-slider">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper mt-2">
+                            <!-- Slides -->
+                            <a href="projects.html" class="swiper-slide">
+                                <div class="property-list shadow">
+                                    <div class="image">
+                                        <img src="assets/img/index/abroad-classic01.jpg" class="img-fluid" alt="Spanish House">
+                                    </div>
+                                    <div class="text-right">
+                                        <h6>Giá</h6>
+                                        <p>1.750.000.000 đ</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <div class="item">
+                                            <h4 class="m-0">Charles III. Palace</h4>
+                                            <p class="m-0">Málaga, Spain</p>
+                                        </div>
+                                        <div class="item d-flex align-self-center">
+                                            <i class="fas fa-bed mr-2 align-self-center"></i>
+                                            <span class="mr-3">5</span>
+                                            <i class="fas fa-bath mr-2 align-self-center"></i>
+                                            <span>5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="projects.html" class="swiper-slide">
+                                <div class="property-list shadow">
+                                    <div class="image">
+                                        <img src="assets/img/index/abroad-unique02.jpg" class="img-fluid" alt="Stone house">
+                                    </div>
+                                    <div class="text-right">
+                                        <h6>Giá</h6>
+                                        <p>3.350.000.000 đ</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <div class="item">
+                                            <h4 class="m-0">Mada'in Saleh</h4>
+                                            <p class="m-0">Saudi Arabia</p>
+                                        </div>
+                                        <div class="item d-flex align-self-center">
+                                            <i class="fas fa-bed mr-2 align-self-center"></i>
+                                            <span class="mr-3">10</span>
+                                            <i class="fas fa-bath mr-2 align-self-center"></i>
+                                            <span>8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="projects.html" class="swiper-slide">
+                                <div class="property-list shadow">
+                                    <div class="image">
+                                        <img src="assets/img/index/abroad-france01.jpg" class="img-fluid" alt="French Conty House">
+                                    </div>
+                                    <div class="text-right">
+                                        <h6>Giá</h6>
+                                        <p>65.550.000.000 đ</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <div class="item">
+                                            <h4 class="m-0">Saint-Jean-Cap-Ferrat</h4>
+                                            <p class="m-0">Provence-Alpes-Côte D'azur, France
+                                            </p>
+                                        </div>
+                                        <div class="item d-flex align-self-center">
+                                            <i class="fas fa-bed mr-2 align-self-center"></i>
+                                            <span class="mr-3">7</span>
+                                            <i class="fas fa-bath mr-2 align-self-center"></i>
+                                            <span>7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="projects.html" class="swiper-slide">
+                                <div class="property-list shadow">
+                                    <div class="image">
+                                        <img src="assets/img/index/abroad-maldives01.jpg" class="img-fluid" alt="maldives beach house">
+                                    </div>
+                                    <div class="text-right">
+                                        <h6>Giá</h6>
+                                        <p>10.775.865.627</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <div class="item">
+                                            <h4 class="m-0">Kunfunadhoo Island</h4>
+                                            <p class="m-0">Baa Atoll, Republic Of Maldives</p>
+                                        </div>
+                                        <div class="item d-flex align-self-center">
+                                            <i class="fas fa-bed mr-2 align-self-center"></i>
+                                            <span class="mr-3">9</span>
+                                            <i class="fas fa-bath mr-2 align-self-center"></i>
+                                            <span>9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="projects.html" class="swiper-slide">
+                                <div class="property-list shadow">
+                                    <div class="image">
+                                        <img src="assets/img/index/abroad-edinburgh01.jpg" class="img-fluid" alt="edinburgh uk house">
+                                    </div>
+                                    <div class="text-right">
+                                        <h6>Giá</h6>
+                                        <p>3.750.000.000</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <div class="item">
+                                            <h4 class="m-0">Boraston House</h4>
+                                            <p class="m-0">Edinburgh, UK</p>
+                                        </div>
+                                        <div class="item d-flex align-self-center">
+                                            <i class="fas fa-bed mr-2 align-self-center"></i>
+                                            <span class="mr-3">8</span>
+                                            <i class="fas fa-bath mr-2 align-self-center"></i>
+                                            <span>8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--Navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Start Resent Abroad Property Section -->
+
+        <!--Start Features Section-->
+        <section class="features">
+            <div class="container">
+                <div class="features-content">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 features-box move-from-left">
+                            <div class="features-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h4 class="features-h4">Những khu đất có tiềm năng nhất thế giới</h4>
+                            <p class="features-text">Khám phá bộ sưu tập bất động sản quốc tế của chúng tôi và tìm ngôi nhà sang trọng đáp ứng phong cách sống độc đáo của bạn.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 features-box move-from-left">
+                            <div class="features-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h4 class="features-h4">Chỉ những tài sản tốt nhất</h4>
+                            <p class="features-text">Nguồn tài nguyên số 1 cho tất cả mọi người trên toàn cầu với bất động sản cao cấp, tài sản thương mại và nhà ở tốt nhất.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 features-box move-from-left">
+                            <div class="features-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h4 class="features-h4">Tất cả các dự án ở những vị trí hàng đầu</h4>
+                            <p class="features-text">Hãy để Chuyên gia bất động sản ở nước ngoài, tìm dự án hoàn hảo của bạn trong nước hoặc / và nước ngoài.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 features-box move-from-right">
+                            <div class="features-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <h4 class="features-h4">Nhà mới trong một tuần</h4>
+                            <p class="features-text">Hãy để chúng tôi Tìm cho bạn ngôi nhà mới ưng ý nhất trong vòng 7 ngày*</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 features-box move-from-right">
+                            <div class="features-icon">
+                                <i class="fas fa-presentation"></i>
+                            </div>
+                            <h4 class="features-h4">1% nhà môi giới hàng đầu</h4>
+                            <p class="features-text">Đại lý bất động sản <strong>Phí thấp nhất</strong>. Giá dịch vụ cố định: 10.000.000 + VAT</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 features-box move-from-right">
+                            <div class="features-icon">
+                                <i class="fas fa-lock-open-alt"></i>
+                            </div>
+                            <h4 class="features-h4">thanh toán an toàn</h4>
+                            <p class="features-text">Từ các nhà bán lẻ địa phương đến các doanh nghiệp tập đoàn, chúng tôi hợp tác với các doanh nghiệp trên toàn thế giới.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="request-container">
+            <div class="row justify-content-center">  
+                <div class="col-md-9 col-lg-6 align-self-center justify-content-center">
+                    <div class="col-md-12 col-lg-12 text-center">
+                        <div class="form-header-h1 ">
+                            <h1>Suy nghĩ về việc bán hoặc cho tài sản của bạn?</h1>
+                        </div>
+                        <div class="border-top border-danger mx-auto mt-md-5 mb-md-3"></div>
+                        <div class="form-header-p">
+                            <p></p>
+                        </div>Đây là một dịch vụ miễn phí và không có nghĩa vụ phải tham gia các dịch vụ của chúng tôi, vì vậy nếu bạn cần định giá cho
+                        bán hoặc cho thuê tài sản của bạn, chúng tôi sẵn sàng trợ giúp. Bạn có thể đăng ký định giá với bất kỳ văn phòng nào của chúng tôi.
+                        Khi chúng tôi có thông tin chi tiết của bạn, chúng tôi sẽ gọi cho bạn vào thời điểm thích hợp cho bạn.
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 pr-0 align-self-center justify-content-center">
+                    <img src="assets/img/index/property-in-hand.png" class="img-fluid" alt="property in hand">
+                </div>
+                <div>
+                    <a href="request-valuation.html" class="btn text-center">Đặt lịch định giá</a>
+                </div> 
+            </div>
+        </div>
+        <!--End Features Section-->
+
+        <!-- Start Three Column Section -->
+        <div class="container p-0 pt-lg-5">
+            <div class="row mt-5">
+                <div class="col-12 text-center three-col-header">
+                    <h2>Tổng quan về quá trình mua nhà:</h2>
+                </div>
+            </div>              
+            <div class="row what-we-do text-center mt-5">
+                <div class="col-md-12 col-lg-4">
+                    <a href="buyAdvice.html">
+                        <img src="assets/img/index/advice01.jpg"  class="img-fluid pt-3" alt="women in business">
+                        <h3 class="my-4 text-center">TƯ VẤN CHO NGƯỜI MUA</h3>
+                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-3"></div>
+                        <p>Mua tài sản là một quá trình phức tạp. Với hơn 30 năm kinh nghiệm làm việc với người mua tất cả
+                            trên khắp Ireland, chúng tôi đã nghiên cứu và phát triển tuyển tập các hướng dẫn và tài nguyên hữu ích để cung cấp
+                            bạn với cái nhìn sâu sắc bạn cần.
+                        </p>
+                    </a>
+                </div>
+                
+                <div class="col-md-12 col-lg-4">
+                    <a href="mortgage.html">
+                        <img src="assets/img/index/mortgages01.jpg" class="img-fluid pt-3" alt="mortgages picture">
+                        <h3 class="my-4 text-center">THẾ CHẤP</h3>
+                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-3"></div>
+                        <p>Từ việc sẵn sàng thế chấp đến chuẩn bị và nộp đơn đăng ký đầy đủ của bạn, bộ phận Thế chấp của chúng tôi
+                            có cái nhìn sâu sắc và kiến thức chuyên môn cần thiết để giúp đảm bảo cho bạn kết quả tốt nhất có thể.
+                        </p>
+                    </a>
+                </div>
+                
+                <div class="col-md-12 col-lg-4">
+                    <a href="research.html">
+                        <img src="assets/img/index/research01.jpg" class="img-fluid pt-3" alt="monitor screen picture">
+                        <h3 class="my-4 text-center">TÌM KIẾM</h3>
+                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-3"></div>
+                        <p>Áp dụng các phương pháp nghiên cứu chuyên sâu, chúng tôi thường xuyên đăng tải các thông tin cập nhật, xu hướng, dự báo thị trường
+                            và nhiều hơn nữa giúp bạn đưa ra các quyết định về tài sản sáng suốt được hỗ trợ bởi các thông tin và dữ kiện xác thực.
+                        </p>
+                    </a>
+                </div>  
+            </div>
+        </div>
+        <!-- End Three Column Section -->
+
+        <!--Start Footer Widget Section-->
+        <div class="footer-widget-border">
+            <div class="container-fliud footer-widget">
+                <div class="row pt-5 pb-5 align-items-center">
+                    <div class="col-md-6 col-lg-3 text-center footer-widget-text">
+                        <h1>Đội ngũ của chúng tôi</h1>
+                        <p>Người dân địa phương có kinh nghiệm</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mt-3 text-center social-media">
+                        <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="http://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                        <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mt-5 mt-lg-0 text-center">
+                        <a href="contact.html" class="btn">Đặt một câu hỏi</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mt-5 mt-lg-0 text-center">
+                        <a href="request-valuation.html" class="btn">Yêu cầu thẩm định</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Start Footer Widget Section-->
+
+        <!--Start Testimonials Section-->
+        <section class="testimonials-container pt-5">
+            <div class="container-fluid">
+                <div class="row mt-5 move-from-left">
+                    <div class="col-12 testimonials-header text-center">
+                        <h2>Đánh giá của khách hàng</h2>
+                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="testimonials-card-header">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonials-card-body">
+                            <p> Thật tuyệt vời khi làm việc với bạn. Chúng tôi thực sự sẽ bỏ lỡ khu vực này, nhưng chúng tôi đang mong chờ chương tiếp theo của cuộc đời mình.
+                                Cảm ơn bạn đã làm cho quy trình trở nên dễ dàng và nhận được kết quả tuyệt vời!</p>
+                            <p class="mb-0">Thảo Vân</p>
+                            <span>Chủ nhà</span>
+                            <div class="icons d-flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                        <div class="testimonials-card-header">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonials-card-body">
+                            <p>Chúng tôi rất biết ơn bạn và nhóm vì sự hỗ trợ tuyệt vời mà bạn đã dành cho chúng tôi trong việc bán căn nhà của chúng tôi. nhưng chúng tôi rất hài lòng với
+                                cách nó đã làm việc! Chúng tôi biết kết quả là nhờ sự chăm chỉ và kiên trì của bạn.</p>
+                            <p class="mb-0">Hữu Hào</p>
+                            <span>Chủ nhà</span>
+                            <div class="icons d-flex ">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="testimonials-card-header">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonials-card-body">
+                            <p>Rất vui được giao dịch với bạn và nhóm. Bạn đã giúp việc bán nhà của tôi trở nên dễ dàng, Thực sự hài lòng với kết quả này.
+                                Tôi rất mong được thực hiện một cuộc giao dịch với bạn trong thời gian sớm nhất!</p>
+                            <p class="mb-0">Xuân Mạnh</p>
+                            <span>Chủ nhà</span>
+                            <div class="icons d-flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="testimonials-card-header">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="testimonials-card-body">
+                            <p>Đây là một công ty bất động sản thực sự quan tâm đến mọi người và đối xử với khách hàng của mình rất đàng hoàng và cẩn thận. Và thật là một kết quả tuyệt vời trong việc mua
+                                bán nhà! Tôi rất muốn giới thiệu họ, họ đã đưa ra lời khuyên tuyệt vời!</p>
+                            <p class="mb-0">Anh Đức</p>
+                            <span>Chủ nhà</span>
+                            <div class="icons d-flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Testimonials Section-->
+
+        <!--Start Footer Section-->
+        <div class="footer-widget-green-border mt-5">
+            <div class="footer-widget-green-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mb-xl-0  text-center move-from-right">
+                            <p class="m-0">Chúng tôi là những chuyên gia nghiên cứu thị trường làm việc với khách hàng để tạo ra chất lượng cao, dựa trên dữ liệu
+                                và nghiên cứu thị trường bất động sản vô song.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h4>Thông tin liên lạc</h4>
+                        <div class="footer-address">
+                            <p>35, Hoà Minh 14, Liên Chiểu, Đà Nẵng</p>
+                            <span>Phone: 0987263397</span>
+                            <span>Email: leanhduc1510@gmail.com</span>
+                        </div>   
+                    </div>
+                 
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                        <h4>Liên hệ nhanh</h4>
+                        <ul class="pl-0">
+                            <li><a href="local-properties.html">Dự án</a></li>
+                            <li><a href="mortgage.html">Thế chấp</a></li>
+                            <li><a href="request-valuation.html">Yêu cầu định giá</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12 mt-3 text-center social-media">
+                        <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="http://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                        <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-top border-dark w-100 mx-auto"></div>
+                <div class="row">
+                    <div class="col-lg-12 footer-bottom text-center">
+                        <p class="footer-text m-0">
+                            Dự án bất động sản
+                        </p>
+                    </div>   
+                </div>
+            </div> 
+        </footer>
+        <!--Start Footer Section-->
+
+
+        <!--Start Scripts-->
+        <!--Bootstarp-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+        <!--SwiperJs https://swiperjs.com/-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!--JS-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/mortgage-calc.js"></script>
+        <script src="assets/js/index-swiperjs.js"></script>
+        <!-- End Script -->
+    </body>
+</html>
